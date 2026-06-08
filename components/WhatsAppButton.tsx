@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
-const PHONE = "91XXXXXXXXXX";
+const PHONE = "916264796574";
 const MESSAGE = "Hi Future Inc, I want a free strategy consultation.";
 const WA_URL = `https://wa.me/${PHONE}?text=${encodeURIComponent(MESSAGE)}`;
 
