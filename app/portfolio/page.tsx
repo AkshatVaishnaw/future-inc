@@ -14,11 +14,12 @@ const projects = [
     title: "NovaTech SaaS Platform",
     category: "Meta Ads",
     tags: ["Meta Ads", "SEO", "SaaS"],
-    image: "/portfolio-1.jpg",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80",
     result: "+340% Revenue in 8 Months",
     industry: "B2B SaaS",
     description:
-      "NovaTech was struggling to find product-market fit and scale their MRR beyond $50K. We built a full-funnel Meta Ads system targeting decision-makers with precise behavioral signals, paired with a content moat strategy that drove 200K+ monthly visitors within 8 months.",
+      "NovaTech was stuck at $50K MRR with no clear acquisition channel. We architected a full-funnel Meta Ads system targeting C-suite and VP-level decision-makers using behavioral intent signals, layered with a long-form content moat that compounded to 200K+ monthly organic visitors. MRR hit $500K inside 8 months.",
     metrics: [
       { label: "Revenue Growth", value: "+340%" },
       { label: "Cost Per Trial", value: "-58%" },
@@ -32,34 +33,36 @@ const projects = [
     title: "UrbanEats Delivery App",
     category: "Google Ads",
     tags: ["Google Ads", "CRM", "E-commerce"],
-    image: "/portfolio-2.jpg",
+    image:
+      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&fit=crop&q=80",
     result: "-62% CPA, 3x Order Volume",
     industry: "Food & Delivery",
     description:
-      "UrbanEats was burning through their ad budget with a $28 CPA that made unit economics unviable. We rebuilt their entire Google Ads account structure, implemented smart bidding strategies, and launched a CRM automation system that turned one-time customers into repeat buyers.",
+      "UrbanEats was bleeding budget with a $28 CPA that made unit economics impossible. We tore down and rebuilt their Google Ads structure from scratch — tight ad groups, responsive search ads, and Target CPA bidding trained on 90 days of conversion data. A post-order CRM flow turned first-time customers into weekly regulars.",
     metrics: [
       { label: "CPA Reduction", value: "-62%" },
       { label: "Order Volume", value: "3x" },
       { label: "Customer LTV", value: "+180%" },
-      { label: "Repeat Rate", value: "68%" },
+      { label: "Repeat Order Rate", value: "68%" },
     ],
-    color: "from-blue-900/50 to-indigo-900/30",
+    color: "from-orange-900/50 to-red-900/30",
   },
   {
     id: 3,
     title: "LuxeLiving Interior Design",
     category: "Web Dev",
     tags: ["Web Dev", "Content", "SEO"],
-    image: "/portfolio-3.jpg",
+    image:
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop&q=80",
     result: "+280% Inbound Leads in 90 Days",
     industry: "Interior Design",
     description:
-      "LuxeLiving had a beautiful portfolio but a website that was invisible in search and failed to convert visitors. We redesigned their site with conversion optimization principles, launched a targeted SEO content strategy, and built a lead generation funnel that turned browsers into bookings.",
+      "LuxeLiving's stunning portfolio was invisible to Google and didn't convert visitors once they arrived. We rebuilt their site on Next.js with a conversion-first architecture, launched a keyword-clustered content strategy targeting high-intent renovation searches, and added a project estimation tool that turned browsers into consultation bookings.",
     metrics: [
       { label: "Lead Growth", value: "+280%" },
       { label: "Organic Traffic", value: "+420%" },
-      { label: "Page Speed Score", value: "98/100" },
-      { label: "Booking Rate", value: "12%" },
+      { label: "PageSpeed Score", value: "98/100" },
+      { label: "Consultation Rate", value: "12%" },
     ],
     color: "from-emerald-900/50 to-teal-900/30",
   },
@@ -68,33 +71,35 @@ const projects = [
     title: "MedFlow Clinic Network",
     category: "AI Automation",
     tags: ["AI Automation", "WhatsApp", "CRM"],
-    image: "/portfolio-1.jpg",
+    image:
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=80",
     result: "30+ hrs/week saved, 40% more bookings",
     industry: "Healthcare",
     description:
-      "MedFlow's clinic staff was spending 30+ hours per week on manual patient booking, reminders, and follow-up. We built a comprehensive AI automation system using WhatsApp and email that handles the entire patient journey — from initial inquiry to post-appointment review collection.",
+      "MedFlow's front-desk team was drowning in manual scheduling, reminders, and follow-ups across four clinic locations. We deployed an AI-powered WhatsApp automation system that handles the entire patient journey — inquiry to booking, 24hr reminder, post-visit review request — all without a single manual touchpoint.",
     metrics: [
       { label: "Hours Saved/Week", value: "30+" },
       { label: "Booking Increase", value: "+40%" },
       { label: "No-Show Rate", value: "-65%" },
-      { label: "Review Score", value: "4.9/5" },
+      { label: "Google Review Score", value: "4.9/5" },
     ],
-    color: "from-amber-900/50 to-orange-900/30",
+    color: "from-blue-900/50 to-cyan-900/30",
   },
   {
     id: 5,
     title: "PureVita Supplements",
     category: "Meta Ads",
     tags: ["Meta Ads", "Email", "E-commerce"],
-    image: "/portfolio-2.jpg",
+    image:
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&auto=format&fit=crop&q=80",
     result: "5.8x ROAS, $2M+ Revenue Generated",
     industry: "Health & Wellness",
     description:
-      "PureVita wanted to scale from $200K to $2M in annual revenue. We built a systematic Meta Ads acquisition funnel paired with a high-converting email/SMS retention engine. The result: consistent 5.8x ROAS on cold traffic and an email list that generates $40K/month passively.",
+      "PureVita had a great product but was running unprofitable Meta campaigns with a 1.9x ROAS. We overhauled their creative strategy, rebuilt their funnel with a high-converting advertorial bridge page, and launched a 12-touch email/SMS post-purchase retention engine. Twelve months later: $2M annual revenue, 5.8x ROAS, and $40K/month passively from email alone.",
     metrics: [
       { label: "ROAS", value: "5.8x" },
       { label: "Annual Revenue", value: "$2M+" },
-      { label: "Email Revenue", value: "$40K/mo" },
+      { label: "Email Revenue/Mo", value: "$40K" },
       { label: "Subscriber LTV", value: "$180" },
     ],
     color: "from-pink-900/50 to-rose-900/30",
@@ -104,18 +109,19 @@ const projects = [
     title: "FinEdge Financial Advisors",
     category: "SEO",
     tags: ["Google Ads", "SEO", "Finance"],
-    image: "/portfolio-3.jpg",
-    result: "400+ Qualified Leads/Month from Organic",
+    image:
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&auto=format&fit=crop&q=80",
+    result: "400+ Qualified Leads/Month",
     industry: "Financial Services",
     description:
-      "FinEdge was entirely dependent on referrals with zero digital presence. We built a comprehensive SEO and Google Ads strategy targeting high-net-worth individuals seeking financial planning services. Within 6 months, organic leads surpassed paid, creating a self-sustaining growth engine.",
+      "FinEdge was 100% reliant on referrals. We built a dual-engine growth system: Google Search Ads for immediate lead flow while an authority SEO strategy established them as the go-to resource for high-net-worth financial planning content. Six months in, organic leads overtook paid and continue to compound monthly.",
     metrics: [
       { label: "Organic Leads/Mo", value: "400+" },
-      { label: "Keyword Rankings", value: "Top 3" },
-      { label: "Organic Traffic", value: "+680%" },
+      { label: "Page 1 Rankings", value: "47 KWs" },
+      { label: "Organic Traffic Growth", value: "+680%" },
       { label: "Lead Quality Score", value: "9.2/10" },
     ],
-    color: "from-cyan-900/50 to-teal-900/30",
+    color: "from-amber-900/50 to-yellow-900/30",
   },
 ];
 
@@ -148,7 +154,7 @@ function ProjectModal({
             src={project.image}
             alt={project.title}
             fill
-            className="object-cover opacity-30"
+            className="object-cover opacity-50"
             sizes="(max-width: 768px) 100vw, 768px"
           />
           <button

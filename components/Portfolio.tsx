@@ -8,63 +8,75 @@ import Link from "next/link";
 const projects = [
   {
     id: 1,
-    title: "NovaTech SaaS",
+    title: "NovaTech SaaS Platform",
     category: "Meta Ads + SEO",
-    description: "Scaled a B2B SaaS from $0 to $500K ARR in 8 months through targeted Meta campaigns and SEO.",
+    description:
+      "Scaled a B2B SaaS from $50K to $500K MRR in 8 months through full-funnel Meta campaigns and a content moat strategy driving 200K+ monthly visitors.",
     result: "+340% Revenue",
-    image: "/portfolio-1.jpg",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80",
     tags: ["Meta Ads", "SEO", "SaaS"],
-    color: "from-violet-900/40 to-purple-900/20",
+    color: "from-violet-900/50 to-purple-900/30",
   },
   {
     id: 2,
     title: "UrbanEats Delivery",
     category: "Google Ads + CRM",
-    description: "Reduced cost per acquisition by 62% while tripling order volume for a food delivery startup.",
+    description:
+      "Rebuilt Google Ads architecture and launched a CRM retention engine that tripled order volume while cutting cost per acquisition by 62%.",
     result: "-62% CPA",
-    image: "/portfolio-2.jpg",
+    image:
+      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&fit=crop&q=80",
     tags: ["Google Ads", "CRM", "E-commerce"],
-    color: "from-blue-900/40 to-indigo-900/20",
+    color: "from-orange-900/50 to-red-900/30",
   },
   {
     id: 3,
     title: "LuxeLiving Interiors",
-    category: "Website + Content",
-    description: "Redesigned website and content strategy that increased inbound leads by 280% in 90 days.",
+    category: "Web Dev + Content",
+    description:
+      "Redesigned their site and launched an SEO content strategy that drove +420% organic traffic and increased inbound design project leads by 280% in 90 days.",
     result: "+280% Leads",
-    image: "/portfolio-3.jpg",
+    image:
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop&q=80",
     tags: ["Web Dev", "Content", "SEO"],
-    color: "from-emerald-900/40 to-teal-900/20",
+    color: "from-emerald-900/50 to-teal-900/30",
   },
   {
     id: 4,
     title: "MedFlow Clinics",
     category: "AI Automation + WhatsApp",
-    description: "Automated patient booking and follow-up via WhatsApp AI, saving 30 hours/week in admin time.",
+    description:
+      "Deployed AI-powered WhatsApp automation for patient booking and follow-up, saving 30+ admin hours weekly and increasing appointment fill rate by 40%.",
     result: "30hrs/week saved",
-    image: "/portfolio-1.jpg",
-    tags: ["AI", "WhatsApp", "Automation"],
-    color: "from-amber-900/40 to-orange-900/20",
+    image:
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=80",
+    tags: ["AI Automation", "WhatsApp", "CRM"],
+    color: "from-blue-900/50 to-cyan-900/30",
   },
   {
     id: 5,
     title: "PureVita Supplements",
     category: "Meta Ads + Email",
-    description: "Built a full-funnel acquisition and retention system delivering 5.8x ROAS for an e-commerce brand.",
+    description:
+      "Built a systematic cold-traffic acquisition funnel paired with an email/SMS retention engine that consistently delivers 5.8x ROAS and $40K/mo in passive email revenue.",
     result: "5.8x ROAS",
-    image: "/portfolio-2.jpg",
+    image:
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&auto=format&fit=crop&q=80",
     tags: ["Meta Ads", "Email", "E-commerce"],
-    color: "from-pink-900/40 to-rose-900/20",
+    color: "from-pink-900/50 to-rose-900/30",
   },
   {
     id: 6,
     title: "FinEdge Advisors",
     category: "Google Ads + SEO",
-    description: "Generated 400+ qualified financial planning leads per month through Search + Local SEO.",
+    description:
+      "Built a dominant search presence for high-net-worth financial planning keywords, generating 400+ qualified organic leads monthly with a 9.2/10 lead quality score.",
     result: "400+ leads/mo",
-    image: "/portfolio-3.jpg",
+    image:
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&auto=format&fit=crop&q=80",
     tags: ["Google Ads", "SEO", "Finance"],
-    color: "from-cyan-900/40 to-teal-900/20",
+    color: "from-amber-900/50 to-yellow-900/30",
   },
 ];
 
@@ -104,18 +116,18 @@ export default function Portfolio() {
               className="group relative rounded-2xl overflow-hidden border border-white/[0.06] cursor-pointer"
             >
               <div
-                className={`absolute inset-0 bg-gradient-to-br ${project.color} transition-opacity duration-300 group-hover:opacity-80`}
+                className={`absolute inset-0 bg-gradient-to-br ${project.color} transition-opacity duration-300 group-hover:opacity-90`}
               />
 
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-52 overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover opacity-40 group-hover:opacity-50 transition-all duration-500 group-hover:scale-105"
+                  className="object-cover opacity-50 group-hover:opacity-65 transition-all duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white text-xs font-semibold border border-white/10">
+                <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-black/70 backdrop-blur-sm text-white text-xs font-semibold border border-white/10">
                   {project.result}
                 </div>
               </div>
@@ -125,7 +137,7 @@ export default function Portfolio() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 py-0.5 rounded text-xs text-zinc-400 bg-white/[0.06] border border-white/[0.06]"
+                      className="px-2 py-0.5 rounded text-xs text-zinc-300 bg-white/[0.08] border border-white/[0.08]"
                     >
                       {tag}
                     </span>
