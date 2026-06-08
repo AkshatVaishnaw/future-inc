@@ -2,9 +2,6 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import type { Metadata } from "next";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 
 const team = [
@@ -106,9 +103,7 @@ function Section({ children, className = "" }: { children: React.ReactNode; clas
 
 export default function AboutPage() {
   return (
-    <>
-      <Navbar />
-      <main className="pt-16">
+    <main className="pt-16 flex-1">
         {/* Hero */}
         <section className="relative py-32 px-6 overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
@@ -163,7 +158,7 @@ export default function AboutPage() {
             </Section>
 
             <Section className="space-y-4">
-              {milestones.map((m, i) => (
+              {milestones.map((m) => (
                 <div key={m.year} className="flex items-start gap-4">
                   <div className="w-16 text-sm font-mono text-violet-400 pt-0.5 flex-shrink-0">
                     {m.year}
@@ -340,8 +335,6 @@ export default function AboutPage() {
           title="Ready to Join Our Growing Family?"
           subtitle="150+ businesses trust Future Inc with their growth. Join them and discover what's possible when you work with a team that's truly invested in your success."
         />
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }

@@ -2,14 +2,10 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 export default function NotFound() {
   return (
-    <>
-      <Navbar />
-      <main className="min-h-screen flex items-center justify-center px-6 pt-16">
+      <main className="min-h-screen flex items-center justify-center px-6 pt-16 flex-1">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-violet-600/8 blur-[120px]" />
         </div>
@@ -43,7 +39,5 @@ export default function NotFound() {
           </div>
         </motion.div>
       </main>
-      <Footer />
-    </>
   );
 }

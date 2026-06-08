@@ -3,8 +3,6 @@
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import Link from "next/link";
 
@@ -211,8 +209,7 @@ export default function PortfolioPage() {
 
   return (
     <>
-      <Navbar />
-      <main className="pt-16">
+      <main className="pt-16 flex-1">
         <section className="py-32 px-6 text-center relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-violet-600/8 blur-[120px]" />
@@ -265,7 +262,7 @@ export default function PortfolioPage() {
               className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
             >
               <AnimatePresence mode="popLayout">
-                {filtered.map((project, i) => (
+                {filtered.map((project) => (
                   <motion.div
                     key={project.id}
                     layout
@@ -342,7 +339,6 @@ export default function PortfolioPage() {
           subtitle="Every business you've seen here started with a free strategy call. Your success story could be next."
         />
       </main>
-      <Footer />
 
       <AnimatePresence>
         {selectedProject && (

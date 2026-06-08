@@ -2,8 +2,6 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 
 const contactDetails = [
@@ -74,9 +72,7 @@ export default function ContactPage() {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <>
-      <Navbar />
-      <main className="pt-16">
+      <main className="pt-16 flex-1">
         {/* Hero */}
         <section className="py-24 px-6 text-center relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
@@ -206,7 +202,5 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
-      <Footer />
-    </>
   );
 }

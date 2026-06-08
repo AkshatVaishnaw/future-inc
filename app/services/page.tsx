@@ -2,8 +2,6 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import Link from "next/link";
 
@@ -290,9 +288,7 @@ function ServiceCard({ service, index }: { service: (typeof services)[0]; index:
 
 export default function ServicesPage() {
   return (
-    <>
-      <Navbar />
-      <main className="pt-16">
+    <main className="pt-16 flex-1">
         <section className="py-32 px-6 text-center relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-violet-600/8 blur-[120px]" />
@@ -330,7 +326,5 @@ export default function ServicesPage() {
           subtitle="Choose one service or build a full growth stack. Book a free strategy call and we'll recommend the right combination for your business goals."
         />
       </main>
-      <Footer />
-    </>
   );
 }
